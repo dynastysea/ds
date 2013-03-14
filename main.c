@@ -121,7 +121,7 @@ int main()
 
 	while(1)
 	{
-		sleep(100);
+		sleep(10);
 	}
     
     return 0;
