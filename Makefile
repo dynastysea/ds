@@ -4,7 +4,7 @@ CFLAGS=-g -Wall
 SOURCES=$(wildcard *.c ./core/*.c)
 OBJECTS=$(addprefix ./, $(addsuffix .o, $(basename $(SOURCES))))
 
-TARGET=dslog
+TARGET=ds
 all: $(TARGET)
 
 $(TARGET) : $(OBJECTS)
