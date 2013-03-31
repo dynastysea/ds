@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-g -Wall 
 #OBJPATH=./build
-SOURCES=$(wildcard *.c ./core/*.c)
+SOURCES=$(wildcard *.c ./core/*.c ./common/*.c)
 OBJECTS=$(addprefix ./, $(addsuffix .o, $(basename $(SOURCES))))
 
 TARGET=ds
