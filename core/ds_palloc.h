@@ -41,6 +41,15 @@ struct ds_pool
 };
 
 ds_pool_t *ds_create_pool(size_t size);
+void ds_destroy_pool(ds_pool_t *pool);
+void ds_reset_pool(ds_pool_t *pool);
+
+
+void *ds_palloc(ds_pool_t *pool, size_t size);
+void *ds_pcalloc(ds_pool_t *pool, size_t size);
+int ds_pfree(ds_pool_t *pool, void *p);
+void *ds_pmemalign(ds_pool_t *pool, size_t size, size_t alignment);
+
 
 #endif
 

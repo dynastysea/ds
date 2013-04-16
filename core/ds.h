@@ -49,9 +49,6 @@
 #define DS_TRUE 1
 #define DS_FALSE 0
 
-#define DS_OK 1
-#define DS_ERROR -1
-
 #define BUFSIZE_16 16
 #define BUFSIZE_32 32
 #define BUFSIZE_64 64
@@ -64,6 +61,21 @@
 
 #define ds_value_helper(n) #n
 #define ds_value(n) ds_value_helper(n)
+
+#define ds_align_ptr(p, a)			\
+    (char *) (((uintptr_t) (p) + ((uintptr_t) a - 1)) & ~((uintptr_t) a - 1))
+
+#define DS_ALIGNMENT   sizeof(unsigned long)
+
+
+#define  DS_OK          0
+#define  DS_ERROR      -1
+#define  DS_AGAIN      -2
+#define  DS_BUSY       -3
+#define  DS_DONE       -4
+#define  DS_DECLINED   -5
+#define  DS_ABORT      -6
+
 
 
 #endif
