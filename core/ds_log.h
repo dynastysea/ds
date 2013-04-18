@@ -1,7 +1,7 @@
 #ifndef _DS_LOG_H
 #define _DS_LOG_H
 
-#include "ds.h"
+#include "../common/ds.h"
 
 #define DS_LOG_FILE_PATH "/var/log/ds/ds.log"
 #define DS_LOG_CONF_PATH "/etc/dslog.cfg"
