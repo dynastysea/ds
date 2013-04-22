@@ -1,5 +1,6 @@
 #include "./common/ds.h"
 #include "./core/ds_log.h"
+#include "./common/ds_string.h"
 #include "./core/ds_signal.h"
 
 
@@ -85,6 +86,7 @@ int ds_set_daemon()
 	return DS_OK;
 }
 
+
 int main()
 {	
 	ds_log_init();
@@ -119,10 +121,5 @@ int main()
     }
 	#endif
 
-	while(1)
-	{
-		sleep(10);
-	}
-    
     return 0;
 }

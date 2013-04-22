@@ -4,7 +4,7 @@ CFLAGS=-g -Wall
 SOURCES=$(wildcard *.c core/*.c common/*.c)
 OBJECTS=$(addprefix ./, $(addsuffix .o, $(basename $(SOURCES))))
 
-TARGET=ds
+TARGET=dsea
 all: $(TARGET)
 
 $(TARGET) : $(OBJECTS)

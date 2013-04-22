@@ -44,6 +44,9 @@ void ds_log_flush();
 
 #define ds_log_error(format, args...) \
     ds_log_print(DS_LOG_ERROR,"[%s:%d] %s:"format,__FILE__, __LINE__, __FUNCTION__,## args)
+    
+#define ds_log_info(format, args...) \
+    ds_log_print(DS_LOG_INFO,"[%s:%d] %s:"format,__FILE__, __LINE__, __FUNCTION__,## args)
 
 
 
