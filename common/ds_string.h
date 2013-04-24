@@ -32,6 +32,8 @@ typedef struct
 
 
 void ds_strlow(u_char *dst, u_char *src, size_t n);
+int ds_strcasecmp(u_char *s1, u_char *s2);
+int ds_strncasecmp(u_char *s1, u_char *s2, size_t n);
 
 static inline u_char * ds_strlchr(u_char *p, u_char *last, u_char c)
 {
